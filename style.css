@@ -1,0 +1,283 @@
+.body{
+    margin:0;
+    background: radial-gradient(#f9f9fc, #c4c4c5);
+}
+.nav-container{
+    gap: 40px;  
+    align-items: center; 
+    padding: 0px 40px 0px 20px
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: white; 
+    background: linear-gradient(to bottom, #343435, #000000); 
+    height: 60px; 
+    align-items: center; 
+    padding: 0px 20px 0px 20px; 
+    gap: 10px; 
+    margin-bottom:0;
+    z-index: 1000;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    top: 0;
+}
+.top-links{
+    gap:10px;
+    position: relative;
+}
+.icons {
+    height: 30px;
+    width: 30px;
+    
+}
+.background-image {
+    background-image: url('images/Businessman\ Digital\ Concept\ Communication\ Network.jpeg');
+    height:400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+.text {
+    color: white;
+    text-align: center;
+}
+.box {
+    background-color: white;
+    border-radius: 60px;
+    height: 65px;
+    width: 600px;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.property-box {
+    background: linear-gradient(to bottom, #f9f9fc, #000000);
+    border-radius: 10px; 
+    position: relative;
+    border:1px solid rgb(0, 0, 0);
+    margin-right: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.property-img{
+    height: 156px;
+    width: 294px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    transition: transform 0.3s;
+    position: relative;
+}
+.property-box:hover .property-img{
+    transform: scale(1.07);
+}
+.property-img:hover{
+    transform: scale(1.07);
+}
+.content-heading{
+    color:rgb(66, 64, 64);
+    margin-top: 100px;
+}
+.vertical-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.button{
+    font-size: 18px; 
+    padding: 10px 50px;  
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: transform 0.3s,
+    background-color 0.3s;
+    font-size: 20px; 
+    padding: 15px;
+    width: 400px;
+    
+}
+.nav-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#search-button{
+    height: 50px;
+    width: 120px;
+    background-color: rgb(80, 211, 117);
+    border-radius: 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
+    flex-shrink: 0
+}
+.nav-button:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+#search-button:hover {
+    background-color: rgb(65, 180, 98);
+    transform: scale(1.02);
+}
+.button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.search-input{
+    width: 100%;
+    height: 65px;
+    padding: 0 140px 0 30px;
+    border: none;
+    border-radius: 60px;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.input{
+    border: none;
+    height: 100%;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.tool-box {
+    background: linear-gradient(to bottom, #656565, #000000);
+    border-radius: 10px; 
+    position: relative;
+    border:1px solid rgb(0, 0, 0);
+    margin-right: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+.tool-img{
+    height: 48px;
+    width: 48px;
+    background: none;
+}
+.tool-text{
+    text-align: left;
+    color: white;
+}
+.tool-text-heading{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+.tool-link{
+    color: rgb(0, 255, 251);
+    text-align: left;
+}
+.tool-box:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+.vertical-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-link{
+    text-decoration: None;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to bottom, #2a2a2b, #000000);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1001;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .nav-button {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+#download-background-img {
+    background-image: url(images/download-page/Blog\ Management\ Skills\ Explained.jpeg);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#phone-input {
+    width: 300px; 
+    padding: 5px; 
+    font-size: 20px;
+    margin-right: -6px;
+    border: none;
+    padding: 10px;
+}
+#submit-button{
+    width: 150px;
+    background-color: rgb(80, 211, 117);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
+    padding: 5px;
+    border: none;
+    padding: 10px;
+}
